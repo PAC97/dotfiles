@@ -150,7 +150,7 @@ cd polybar
 makepkg -si 
 ``` 
 ```
-yay -S picom-tryone-git networkmanager-dmenu-git deadd-notification-center-bin betterlockscreen-git 
+yay -S picom-tryone-git networkmanager-dmenu-git deadd-notification-center-bin betterlockscreen-git kunst-git 
 ```
 
 ## Deadd Notification Center (Dependencias) 
