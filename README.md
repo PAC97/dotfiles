@@ -3,8 +3,13 @@ Utilice algunos script de la distro Archcraft cada archivo tiene contiene la men
 
 # Dotfiles & Configuraciones   
 
-Checa las combinaciones de [teclas](https://github.com/PAC97/Projects/tree/master/PAC97#Keybindings) y el  
-[software](https://github.com/PAC97/Projects/tree/master/PAC97#Software) utilizado en los dotfiles.
+Checa las combinaciones de [teclas](https://github.com/PAC97/dotfiles#Teclas) y el  
+[software](https://github.com/PAC97/dotfiles#Software) utilizado en los dotfiles.
+
+## Menú
+[Teclas](https://github.com/PAC97/dotfiles#Teclas) 
+[Software](https://github.com/PAC97/dotfiles#Software)  
+[Instalaciones](https://github.com/PAC97/dotfiles#Instalaciones) 
 
 ## BSPWM
 ![BSPWM](.screenshots/bspwm.png)  
