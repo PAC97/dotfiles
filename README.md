@@ -85,7 +85,7 @@ Check the [keybindings](https://github.com/PAC97/dotfiles#Keybindings) and the
 | **lxappearance**              |                              |
 | **picom-tryone**              |                              |
 | **networkmanager-dmenu**      |                              |  
-| **NetowrManager**             |                              |
+| **networkmanager**            |                              |
 | **wpa_supplicant**            |                              |    
 | **dialog**                    |                              |
 | **nm-connection-editor**      |                              |  
