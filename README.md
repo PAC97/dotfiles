@@ -1,6 +1,7 @@
-# Dotfiles & Configs
+# Dotfiles & Configs  
 
-https://www.youtube.com/watch?v=VoJOOx2WLy0&t=255s
+# Note  
+I use Some scripts for the distro ArchCraft, the files contain the mentions to the author adi1090x  
 
 Check the [keybindings](https://github.com/PAC97/dotfiles#Keybindings) and the
 [software](https://github.com/PAC97/dotfiles#Software) for to use the dotfiles
