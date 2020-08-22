@@ -54,6 +54,7 @@ Check the [keybindings](https://github.com/PAC97/dotfiles#Keybindings) and the
 | **ctrl + alt + s**         | Screenshot Menu               |
 | **ctrl + alt + n**         | Network Menu                  |
 | **ctrl + alt + t**         | Themes Menu                   |
+| **ctrl + alt + l**         | LockScreen                    |
 | **PrintSc**                | Take a screenshot             |
 | **alt + PrintSc**          | Take a screenshot in 5 second |
 
@@ -100,7 +101,7 @@ git clone https://aur.archlinux.org/polybar.git
 cd polybar  
 makepkg -si  
 
-yay -S picom-tryone-git networkmanager-dmenu-git deadd-notification-center-bin 
+yay -S picom-tryone-git networkmanager-dmenu-git deadd-notification-center-bin betterlockscreen-git 
 
 ## Deadd Notification Center Dependences 
 pip install notify-send.py
