@@ -1,7 +1,7 @@
-# Dotfiles & Configs  
-
 # Note  
-I use Some scripts for the distro ArchCraft, the files contain the mentions to the author adi1090x  
+I use Some scripts for the distro ArchCraft, the files contain the mentions to the author [adi1090x](https://github.com/adi1090x) 
+
+# Dotfiles & Configs  
 
 Check the [keybindings](https://github.com/PAC97/dotfiles#Keybindings) and the
 [software](https://github.com/PAC97/dotfiles#Software) for to use the dotfiles
