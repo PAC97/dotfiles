@@ -107,8 +107,9 @@ yay -S picom-tryone-git networkmanager-dmenu-git deadd-notification-center-bin b
 pip install notify-send.py
 
 ## ncmpcpp-ueberzug Dependences 
-[Setup](https://github.com/alnj/ncmpcpp-ueberzug/wiki/Setup)
+[Setup](https://github.com/alnj/ncmpcpp-ueberzug/wiki/Setup)  
 
+## Install Dotfiles  
 git clone https://github.com/PAC97/dotfiles.git  
 cd dotfiles  
 cp -r .config/* ~/.config  
