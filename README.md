@@ -95,9 +95,9 @@ Check the [keybindings](https://github.com/PAC97/dotfiles#Keybindings) and the
 # Installation
 sudo pacman -S bspwm sxhkd rofi mpd mpc ncmpcpp alsa-tools alsa-utils alsa-plugins pulseaudio pulseaudio-alsa scrot viewnior xorg-xbacklight neovim firefox geany ranger dunst lxappearance NetworkManager wpa_supplicant dialog nm-connection-editor arc-gtk-theme papirus-icon-theme 
 
-git clone https://aur.archlinux.org/polybar.git
-cd polybar
-makepkg -si
+git clone https://aur.archlinux.org/polybar.git 
+cd polybar 
+makepkg -si 
 
 yay -S picom-tryone-git networkmanager-dmenu-git deadd-notification-center-bin 
 
@@ -107,13 +107,13 @@ pip install notify-send.py
 ## ncmpcpp-ueberzug Dependences 
 [Setup](https://github.com/alnj/ncmpcpp-ueberzug/wiki/Setup)
 
-git clone https://github.com/PAC97/dotfiles.git 
-cd dotfiles 
-cp -r .config/* ~/.config 
-cp -r fonts/* ~/.local/share/fonts 
-sudo cp bin/* /usr/local/bin 
-cp -r .Xresources.d ~/ 
-cp .Xresources ~/ 
-cp .fehbg ~/ 
-cp -r .mpd ~/ 
-cp -r .ncmpcpp ~/ 
+git clone https://github.com/PAC97/dotfiles.git  
+cd dotfiles  
+cp -r .config/* ~/.config  
+cp -r fonts/* ~/.local/share/fonts  
+sudo cp bin/* /usr/local/bin  
+cp -r .Xresources.d ~/  
+cp .Xresources ~/  
+cp .fehbg ~/  
+cp -r .mpd ~/  
+cp -r .ncmpcpp ~/  
