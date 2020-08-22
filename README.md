@@ -124,7 +124,7 @@ $ sudo pip3 install ueberzug
 git clone https://github.com/PAC97/dotfiles.git  
 cd dotfiles  
 cp -r .config/* ~/.config  
-cp -r fonts/* ~/.local/share/fonts  
+sudo cp -r fonts/* /usr/share/fonts  
 sudo cp bin/* /usr/local/bin  
 cp -r .Xresources.d ~/  
 cp .Xresources ~/  
