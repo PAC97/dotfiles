@@ -51,7 +51,10 @@ Checa las combinaciones de [teclas](https://github.com/PAC97/dotfiles#Teclas) y 
 ![temas](.screenshots/themes.png)  
 
 ## Ventas Abiertas 
-![windows](.screenshots/windows.png)
+![windows](.screenshots/windows.png)  
+
+## Firefox  
+![firefox](.screenshots/firefox.png)
 
 # Teclas  
 
@@ -151,8 +154,22 @@ makepkg -si
 ``` 
 ```
 yay -S picom-tryone-git networkmanager-dmenu-git deadd-notification-center-bin betterlockscreen-git kunst-git 
-```
+```  
+## Instalar tema firefox  
+*   Verificar que **stylesheets (userChrome)** esta activa:  
+    1. Abrir en la barra de direcciones `about:config` en firefox  
+    2. Buscar `toolkit.legacyUserProfileCustomizations.stylesheets`  
+    3. Confirmar que la opción esta en verdadero (true)  
 
+* Asegurate de tener habilitado el tema por defecto
+  1. Abre la siguiente dirección en firefox `about:addons`
+  2. **Habilitar** el tema por **Defecto** si no esta activo
+
+* Instalación  
+```
+cd dotfiles  
+cp -r chrome ~/.mozilla/firefox/uh4008ra.default-release
+```
 ## Deadd Notification Center (Dependencias) 
 ```
 pip install notify-send.py

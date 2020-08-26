@@ -1,27 +1,25 @@
- :root {
+@import "theme.css";
+:root {
 
    /* Minimal Functional Fox variables*/
-  --mff-bg: #292f36;
+  
   --mff-icon-color: #e0fbfc;
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
   --mff-sidebar-color: #e0fbfc;
   --mff-tab-border-radius: 0px;
-  --mff-tab-color: #fefefa;
-  --mff-tab-font-family: "Cantarell", sans;
+  --mff-tab-font-family: "JetBrains Mono";
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
   --mff-tab-pinned-bg: #70c1b3;
-  --mff-tab-selected-bg: #ee6c4d;
-  --mff-tab-soundplaying-bg: #9c89b8;
   --mff-urlbar-color: #98c1d9;
   --mff-urlbar-focused-color: #e0fbfc;
-  --mff-urlbar-font-family: "Cantarell", serif;
+  --mff-urlbar-font-family: "JetBrainsMono Nerd Font";
   --mff-urlbar-font-size: 12pt;
   --mff-urlbar-font-weight: 700;
   --mff-urlbar-results-color: #e0fbfc;
-  --mff-urlbar-results-font-family: "mononoki Nerd Font", serif;
+  --mff-urlbar-results-font-family: "JetBrainsMono Nerd Font";
   --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 700;
   --mff-urlbar-results-url-color: #98c1d9;
@@ -50,11 +48,6 @@
   background: var(--mff-tab-selected-bg) !important;
 }
 
-.tab-background:not[visuallyselected] {
-  background: var(--mff-tab-selected-bg) !important;
-  opacity: 0.5 !important;
-}
-
 /* This positions the tabs under the navaigator container */
 #titlebar {
   -moz-box-ordinal-group: 3 !important;
@@ -75,7 +68,37 @@
 }
 
 .tab-close-button {
- display: none !important;
+ display: block !important;
+}
+
+.tabbrowser-tab:not([selected]) .close-icon  {
+  fill: #ffffff !important;
+}
+
+.tabbrowser-tab:not([selected]) .close-icon:hover  {
+  fill: #282A36 !important;
+  background-color: #c9c9c9 !important;
+  border-radius: 4px;
+}
+
+.tabbrowser-tab[soundplaying="true"] .close-icon  {
+  fill: #282A36 !important;
+}
+
+.tabbrowser-tab[soundplaying="true"] .close-icon:hover  {
+  fill: #c9c9c9 !important;
+  background-color:  #282A36 !important;
+  border-radius: 4px;
+}
+
+.tabbrowser-tab .close-icon{
+  fill: #282A36 !important;
+}
+
+.tabbrowser-tab .close-icon:hover  {
+  fill: white !important;
+  background-color: #333333 !important;
+  border-radius: 4px;
 }
 
 .tab-text {
@@ -83,6 +106,13 @@
   font-weight: var(--mff-tab-font-weight);
   font-size: var(--mff-tab-font-size) !important;
   color: var(--mff-tab-color);
+}
+
+.tab-text:not([selected]) {
+  font-family: var(--mff-tab-font-family);
+  font-weight: var(--mff-tab-font-weight);
+  font-size: var(--mff-tab-font-size) !important;
+  color: aliceblue;
 }
 
 /* Hide the favicon for tabs */
@@ -135,6 +165,14 @@ width: 50% !important;
 
 .tabbrowser-tab[soundplaying="true"] {
   background-color: var(--mff-tab-soundplaying-bg) !important;
+  color: var(--mff-tab-color);
+}
+
+.tabbrowser-tab[soundplaying="true"] .tab-text:not([selected])  {
+  font-family: var(--mff-tab-font-family);
+  font-weight: var(--mff-tab-font-weight);
+  font-size: var(--mff-tab-font-size) !important;
+  color: rgb(42, 42, 43);
 }
 
 #tabs-newtab-button {
