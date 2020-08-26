@@ -77,10 +77,10 @@ for i in ${settings[@]}; do
    bspc rule -a $i desktop='^7' state=floating follow=on focus=on; done
 
 # special rules
-bspc rule -a alacritty-float state=floating follow=on focus=on center=true rectangle=700x400+0+0
-bspc rule -a alacritty-nvim desktop='^2' follow=on focus=on
-bspc rule -a alacritty-player desktop='^6' state=floating follow=on focus=on rectangle=500x250+855+510
-bspc rule -a alacritty-player2 desktop='^6' state=floating follow=on rectangle=700x250+5+510
+bspc rule -a kitty-float state=floating follow=on focus=on center=true rectangle=700x400+0+0
+bspc rule -a kitty-nvim desktop='^2' follow=on focus=on
+bspc rule -a kitty-player desktop='^6' state=floating follow=on focus=on rectangle=500x250+855+510
+bspc rule -a kitty-player2 desktop='^6' state=floating follow=on rectangle=700x250+5+510
 bspc rule -a Pcmanfm state=floating follow=on focus=on
 bspc rule -a Onboard state=floating follow=on focus=on
 bspc rule -a Audacious state=floating follow=on focus=on

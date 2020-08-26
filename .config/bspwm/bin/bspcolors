@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# A script to get colours from xrdb & deploy it to polybar, termite & rofi.
+# A script to get colours from xrdb & deploy it to polybar, kitty & rofi.
 
 DIR="$HOME/.config/bspwm"
 DIR2="$HOME/.config"
@@ -52,50 +52,31 @@ bspbar () {
 }
 
 bspterm () {
-	sed -i '/colors/Q' $DIR2/alacritty/alacritty.yml
-	cat >> $DIR2/alacritty/alacritty.yml <<- EOF	
-colors:
-    # Default colors
-    primary:
-      background: '${BACKGROUND}'
-      foreground: '${FOREGROUND}'
-  
-    # Normal colors
-    normal:
-      black:   '${BLACK}'
-      red:     '${RED}'
-      green:   '${GREEN}'
-      yellow:  '${YELLOW}'
-      blue:    '${BLUE}'
-      magenta: '${MAGENTA}'
-      cyan:    '${CYAN}'
-      white:   '${WHITE}'
-  
-    # Bright colors
-    bright:
-      black:   '${ALTBLACK}'
-      red:     '${ALTRED}'
-      green:   '${ALTGREEN}'
-      yellow:  '${ALTYELLOW}'
-      blue:    '${ALTBLUE}'
-      magenta: '${ALTMAGENTA}'
-      cyan:    '${ALTCYAN}'
-      white:   '${ALTWHITE}'
-font:
-  bold:
-    family: JetBrains Mono
-  italic:
-    family: JetBrains Mono
-  normal:
-    family: JetBrains Mono
-    style: Regular
-  size: 10.5
-window:
-  padding:
-    x: 5
-    y: 5
+	cat > $DIR2/kitty/theme.conf <<- EOF	
+	foreground            ${FOREGROUND}
+	background            ${BACKGROUND}
+	selection_foreground  ${BLACK}
+	selection_background  ${WHITE}
+	url_color             ${CURSOR}
+	cursor                ${CURSOR}
+	color0       ${BLACK}
+	color8       ${ALTBLACK}
+	color1       ${RED}
+	color9       ${ALTRED}
+	color2       ${GREEN}
+	color10      ${ALTGREEN}
+	color3       ${YELLOW}
+	color11      ${ALTYELLOW}
+	color4       ${BLUE}
+	color12      ${ALTBLUE}
+	color5       ${MAGENTA}
+	color13      ${ALTMAGENTA}
+	color6       ${CYAN}
+	color14      ${ALTCYAN}
+	color7       ${WHITE}
+	color15      ${ALTWHITE}
 	EOF
-	
+	killall -USR1 kitty
 }
 
 bsprofi () {
@@ -111,11 +92,24 @@ bsprofi () {
 	EOF
 }
 
+bspfirefox () {
+	cat > $HOME/.mozilla/firefox/uh4008ra.default-release/chrome/theme.css <<- EOF	
+	:root{
+    --mff-bg: ${BACKGROUND};
+    --mff-tab-selected-bg: ${BLUE};
+    --mff-tab-soundplaying-bg: ${MAGENTA};
+    --mff-tab-color: ${BLACK};
+    --mff-close-button: ${GREEN};
+	}
+	EOF
+}
+
 main () {
 	getcolors
 	bspbar
 	bspterm
 	bsprofi
+	bspfirefox
 }
 
 main

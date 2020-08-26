@@ -1,27 +1,24 @@
+ @import "theme.css";
  :root {
 
    /* Minimal Functional Fox variables*/
-  --mff-bg: #292f36;
   --mff-icon-color: #e0fbfc;
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
   --mff-sidebar-color: #e0fbfc;
   --mff-tab-border-radius: 0px;
-  --mff-tab-color: #fefefa;
-  --mff-tab-font-family: "Cantarell", sans;
+  --mff-tab-font-family: "JetBrains Mono";
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
   --mff-tab-pinned-bg: #70c1b3;
-  --mff-tab-selected-bg: #ee6c4d;
-  --mff-tab-soundplaying-bg: #9c89b8;
   --mff-urlbar-color: #98c1d9;
   --mff-urlbar-focused-color: #e0fbfc;
-  --mff-urlbar-font-family: "Cantarell", serif;
+  --mff-urlbar-font-family: "JetBrains Mono";
   --mff-urlbar-font-size: 12pt;
   --mff-urlbar-font-weight: 700;
   --mff-urlbar-results-color: #e0fbfc;
-  --mff-urlbar-results-font-family: "mononoki Nerd Font", serif;
+  --mff-urlbar-results-font-family: "JetBrains Mono";
   --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 700;
   --mff-urlbar-results-url-color: #98c1d9;
@@ -75,14 +72,29 @@
 }
 
 .tab-close-button {
- display: none !important;
+ display: block !important;
 }
+
+.tab-close-button:hover {
+  background-color:var(--mff-close-button) !important;
+  fill: var(--mff-tab-color) !important;
+  border: 0.5px solid var(--mff-tab-color);
+  border-radius: 3px;
+
+ }
 
 .tab-text {
   font-family: var(--mff-tab-font-family);
   font-weight: var(--mff-tab-font-weight);
   font-size: var(--mff-tab-font-size) !important;
   color: var(--mff-tab-color);
+}
+
+.tab-text:not([selected="true"]) {
+  font-family: var(--mff-tab-font-family);
+  font-weight: var(--mff-tab-font-weight);
+  font-size: var(--mff-tab-font-size) !important;
+  color: var(--mff-urlbar-focused-color);
 }
 
 /* Hide the favicon for tabs */
